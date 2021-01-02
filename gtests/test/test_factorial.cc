@@ -7,8 +7,8 @@ TEST(IntegerFunctionTest, negative) {
         EXPECT_EQ(1, Factorial(-1));
         EXPECT_GT(Factorial(-10), 0);
 }
-
-TEST(IntegerFunctionTest, DISABLED_zero) {
+ // to disable a test write TEST(TestName, DISABLE_value_name)
+TEST(IntegerFunctionTest, zero) {
          EXPECT_EQ(1, Factorial(0));
 }
 
