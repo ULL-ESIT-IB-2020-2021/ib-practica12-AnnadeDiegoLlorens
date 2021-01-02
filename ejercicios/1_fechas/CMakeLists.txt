@@ -3,32 +3,19 @@
 # Grado en Ingeniería Informática
 # Informática Básica
 #
-# @author F. de Sande
+# @author Anna de Diego Llorens
 # @date 18 Jun 2020
-# @brief CMakeLists.txt example
-# CMakeLists.txt defines the whole build
-# CMake reads CMakeLists.txt sequentially
-#
-# Build process:
-#   1. cd <project_folder>
-#   2. mkdir build
-#   3. cd build
-#   4. cmake ..
-#   5. make
+# @brief CMakeLists.txt for 1_fechas
 
+cmake_minimum_required(VERSION 3.1)
 
-cmake_minimum_required(VERSION 3.1)  # Mandatory
-
-# set the project name 
-project(GTests                # Mandatory
+project(GTests                
     VERSION 1.0
-    DESCRIPTION "CMake project for "
+    DESCRIPTION " CMake project for        "
     LANGUAGES CXX)
 
-
-set(CMAKE_CXX_STANDARD 14) 						
+set(CMAKE_CXX_STANDARD 14) 					
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-
 
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
@@ -36,17 +23,16 @@ include_directories(${GTEST_INCLUDE_DIRS})
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 include_directories(${PROJECT_SOURCE_DIR}/code)
 
-add_executable(runTests
-   )
 
+add_executable(runTests
+    )
 add_executable(user_program
-  )
+    )
 
 target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
 
