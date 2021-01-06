@@ -1,3 +1,24 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Anna de Diego Llorens
+ * @date 6/01/2021
+ * @brief Archivo del programa Fecha que recoge el cuerpo de las funciones
+ *        y los operadores relativos a la clase fecha. ver: 
+ *  
+ * "como saber si un año es bisiesto:"
+ * @see https://docs.microsoft.com/en-us/office/troubleshoot/excel/determine-a-leap-year
+ * 
+ * "uso de vectores, size y resize"
+ * @see https://www.cplusplus.com/reference/vector/vector/size/
+ * @see https://www.cplusplus.com/reference/vector/vector/resize/
+ * 
+ * "crear 'operators/special members' para clases"
+ * @see http://www.cplusplus.com/doc/tutorial/classes2/
+ */
 #include<iostream>
 #include<sstream>
 #include<vector>

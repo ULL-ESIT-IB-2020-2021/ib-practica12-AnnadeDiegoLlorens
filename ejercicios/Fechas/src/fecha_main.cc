@@ -1,3 +1,20 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Anna de Diego Llorens
+ * @date 6/01/2021
+ * @brief Archivo principal del programa Fechas que recoje 
+ *        un fichero con una lista de fechas colocadas una debajo de otra
+ *         (es decir una en cada linea) siguiendo la estructura dd/mm/aaaa,
+ * 
+ *      En los correspondientes ficheros se encuentran las referencias que 
+ *      consulté para completarlos.
+ *
+ */
+
 #include<iostream>
 #include<fstream>
 #include<string>

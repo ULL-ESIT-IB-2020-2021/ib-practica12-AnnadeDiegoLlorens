@@ -1,4 +1,17 @@
-
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Informática Básica
+ *
+ * @author Anna de Diego Llorens
+ * @date 6/01/2021
+ * @brief Libreria del programa Fecha  que contiene la declaración 
+ *         de la clase Fecha usada en el programa. Ver:
+ * 
+ * "como declarar las clases en diferentes ficheros" 
+ * @see https://www.learncpp.com/cpp-tutorial/class-code-and-header-files/
+ */
 #ifndef FECHA_H
 #define FECHA_H
 
