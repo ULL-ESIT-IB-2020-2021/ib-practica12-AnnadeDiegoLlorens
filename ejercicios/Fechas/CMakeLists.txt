@@ -5,7 +5,7 @@
 #
 # @author F. de Sande
 # @date 18 Jun 2020
-# @brief CMakeLists.txt example
+# @brief CMakeLists.txt para Fechas
 # CMakeLists.txt defines the whole build
 # CMake reads CMakeLists.txt sequentially
 #
@@ -14,16 +14,16 @@
 cmake_minimum_required(VERSION 3.1)  # Mandatory
 
 # set the project name 
-project(GTests                # Mandatory
+project(Fechas              # Mandatory
     VERSION 1.0
-    DESCRIPTION "A simple CMake project for the Fibonacci Sum application"
+    DESCRIPTION "Un proyecto CMake para la aplicacion fechas"
     LANGUAGES CXX)
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 14) 						# Use c++14
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Locate GTest
+
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
@@ -40,49 +40,19 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 
 # Adds an executable target called "runTests" to be built from the source files listed in the command invocation.
 add_executable(runTests
-    test/gtest_main.cc
-    src/factorial.h
-    src/factorial.cc
-    test/test_factorial.cc
-    src/formula.h
-    src/formula.cc
-    test/test_formula.cc
-    src/addition.h
-    src/addition.cc
-    test/test_addition.cc
-    src/multiply.h
-    src/multiply.cc
-    test/test_multiply.cc
-    src/sample2.h
-    src/sample2.cc
-    test/sample2_unittest.cc
-    src/date.h
-    src/date.cc
-    test/test_date.cc
-    src/square_root.h
-    src/square_root.cc
-    test/test_square_root.cc)
+    tests/gtest_main.cc
+    src/fecha.h
+    src/fecha.cc
+    tests/test_fecha.cc)
 
-add_executable(user_program
-    src/factorial.h
-    src/factorial.cc
-    src/formula.h
-    src/formula.cc
-    src/addition.h
-    src/addition.cc
-    src/multiply.h
-    src/multiply.cc
-    src/date.h
-    src/date.cc
-    src/sample2.cc
-    src/square_root.h
-    src/square_root.cc
-		src/main_program.cc)
+add_executable(Fechas
+    src/fecha.h
+    src/fecha.cc
+    src/fecha_funciones.h
+    src/fecha_funciones.cc
+		src/fecha_main.cc)
 
 target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
 
 # Add expected compiler features to a target.
 target_compile_features(runTests PRIVATE cxx_std_14)
-
-# Add compile options to a target.
-target_compile_options(runTests PRIVATE -Wall -Wextra -Wpedantic)
