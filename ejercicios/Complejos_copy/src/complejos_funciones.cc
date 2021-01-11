@@ -66,8 +66,8 @@ Complejo suma(Complejo complejo1, int entero) {
     real1 = complejo1.ObtenerReal(), 
     imaginaria1 = complejo1.ObtenerImaginaria(); 
 
-    real = (real1) + (entero); 
-    imaginaria = (imaginaria1); 
+    real = (real1); 
+    imaginaria = (imaginaria1) +  (entero); 
 
     complejosuma = std::to_string(real) + " + " + std::to_string(imaginaria) + "i"; 
 
@@ -120,7 +120,7 @@ Complejo multiplicacion(Complejo complejo1, Complejo complejo2) {
 Complejo division ( Complejo numerador, Complejo denominador) {
 
     std::string complejodivision, complejofraccionado; 
-    int real, imaginaria, denominadoor, 
+    double real, imaginaria, denominadoor, 
     realnumerador = numerador.ObtenerReal(),
     realdenominador = denominador.ObtenerReal(),
     imaginarianumerador = numerador.ObtenerImaginaria(),
